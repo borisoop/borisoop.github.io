@@ -17,6 +17,7 @@ title: borisoop
 		{% endif %}
 
 		<div class="post-content">{{ post.content }}</div>
+		<p class="meta">Posted on <span class="postdate">{{ post.date | date: "%b %d, %Y" }}</span> with tags, {{ post.tags | array_to_sentence_string }}</p>
 
 	</article>
 
